@@ -7,14 +7,14 @@ LABEL \
     maintainer="Xiaobang Shi <Xiaobang-Shi@outlook.com>" \
     reference="https://github.com/Xiaobang-Shi/vuedock"
 RUN \
-    #使用淘宝镜像
+    #Use taobao mirror
     npm config set registry https://registry.npm.taobao.org \
     && \
     npm install -g @vue/cli
 RUN \
-    #创建工作区文件夹
+    #Create a workspace folder
     mkdir /workspace
 
 WORKDIR \
-    #指定工作区文件夹
+    #Specify workspace folder
     /workspace
