@@ -23,4 +23,7 @@ RUN if [ ${CHANGE_SOURCE} = true ]; then \
 
 RUN npm install -g @vue/cli
 
+RUN mkdir /home/workspace
+WORKDIR /home/workspace
+
 EXPOSE 8080
