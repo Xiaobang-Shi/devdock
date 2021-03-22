@@ -1,9 +1,14 @@
-# Vuedock
+# Devdock
 
 ## Introduction
 
-**Vuedock** is a Vue development environment for Docker.
-It aims to simplify the process of configuring a development environment and in the future will support common services, all pre-configured, providing developers with a ready-made Vue development environment without the need for you to install other software such as Vue on your local machine.
+**Devdock** is a project that packages development environments into Docker containers.
+It aims to simplify the process of configuring development environments and provide developers with a ready-to-use development environment. In the future, Devdock will support development in more programming languages and frameworks.
+
+## Support
+
+- C C++
+- Vue
 
 ## Contents
 
