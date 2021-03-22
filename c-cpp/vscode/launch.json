@@ -1,0 +1,50 @@
+// https://code.visualstudio.com/docs/cpp/launch-json-reference
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "gcc build and debug active file",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${fileDirname}/${fileBasenameNoExtension}.out",
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}",
+            "environment": [],
+            "externalConsole": false,
+            "internalConsoleOptions": "neverOpen",
+            "MIMode": "gdb",
+            "miDebuggerPath": "gdb",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "externalConsole": false
+                }
+            ],
+            "preLaunchTask": "C: gcc build active file"
+        },
+        {
+            "name": "g++ build and debug active file",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${fileDirname}/${fileBasenameNoExtension}.out",
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}",
+            "environment": [],
+            "externalConsole": false,
+            "internalConsoleOptions": "neverOpen",
+            "MIMode": "gdb",
+            "miDebuggerPath": "gdb",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "externalConsole": false
+                }
+            ],
+            "preLaunchTask": "C++: g++ build active file"
+        }
+    ]
+}
