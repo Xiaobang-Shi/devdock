@@ -1,5 +1,5 @@
 # IntelliJ IDEA
 .idea
 # Visual Studio Code
-.vscode
+.vscode/
 devdock.code-workspace
