@@ -6,8 +6,10 @@ LABEL maintainer="Xiaobang Shi <xiaobang.shi@outlook.com>"
 
 ARG CHANGE_SOURCE=true
 RUN if [ ${CHANGE_SOURCE} = true ]; then \
-  # Change application source from deb.debian.org to tsinghua source
-  sed -i "s/archive.ubuntu.com/mirrors.aliyun.com/g" /etc/apt/sources.list \
+  # Change application source from archive.ubuntu.com to aliyun source
+  sed -i "s/archive.ubuntu.com/mirrors.aliyun.com/g" /etc/apt/sources.list && \
+  sed -i "s/security.ubuntu.com/mirrors.aliyun.com/g" /etc/apt/sources.list && \
+  sed -i "s/archive.canonical.com/mirrors.aliyun.com/g" /etc/apt/sources.list \
   ;fi
 
 RUN apt-get update && \

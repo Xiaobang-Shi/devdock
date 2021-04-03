@@ -19,7 +19,7 @@ RUN if [ ${CHANGE_SOURCE} = true ]; then \
   npm config get registry \
   ;fi
 
-RUN npm install -g @vue/cli
+RUN npm install -g create-react-app
 
 RUN mkdir /home/workspace
 WORKDIR /home/workspace
